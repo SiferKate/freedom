@@ -1,1 +1,34 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" type="image/png" href="/freedom-chat/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Freedom Chat web app"/><link rel="manifest" href="/freedom-chat/manifest.json"/><title>Freedom Chat</title><script defer="defer" src="/freedom-chat/static/js/main.c481615a.js"></script><link href="/freedom-chat/static/css/main.7da111ec.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>"serviceWorker"in navigator?window.addEventListener("load",(function(){navigator.serviceWorker.register("service-worker.js").then((function(e){console.log("ServiceWorker registration successful with scope: ",e.scope)}),(function(e){console.log("ServiceWorker registration failed: ",e)})).catch((function(e){console.log(e)}))})):console.log("service worker is not supported")</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/freedom-chat/vite.svg" />
+    <link rel="manifest" href="/freedom-chat/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freedom Chat</title>
+    <script type="module" crossorigin src="/freedom-chat/assets/index-1b73a89b.js"></script>
+    <link rel="modulepreload" crossorigin href="/freedom-chat/assets/vendor-3a40e17c.js">
+    <link rel="stylesheet" href="/freedom-chat/assets/index-6df94ace.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        }).catch(function(err) {
+          console.log(err)
+        });
+      });
+    } else {
+      console.log('service worker is not supported');
+    }
+  </script>
+</html>
